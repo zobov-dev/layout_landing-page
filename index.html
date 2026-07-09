@@ -1,6 +1,9 @@
 <!-- #region head -->
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -8,54 +11,162 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Landing Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/styles/main.scss">
-    <script src="./src/scripts/main.js" defer></script>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/styles/main.scss"
+    />
+    <script
+      src="./src/scripts/main.js"
+      defer
+    ></script>
   </head>
-<!-- #endregion -->
-  <body>
-     <header class="header">
-        <div class="header_top">
-          <a href="#">
-            <img src="./src/images/icon_nothing.png" alt="Nothing logo">
-          </a>
+  <!-- #endregion -->
+  <body class="page__body">
+    <header class="header">
+      <div class="top-bar">
+        <a
+          href="#"
+          class="top-bar__logo"
+        >
+          <img
+            src="./src/images/icon/icon_nothing.png"
+            alt="Nothing logo"
+          />
+        </a>
 
-          <div class="header_icons">
-            <a href="#" class="icon icon--phone"></a>
-            <a href="#" class="icon icon--menu"></a>
-          </div>
+        <div class="top-bar__icons">
+          <a
+            href="#"
+            class="icon icon--phone"
+          ></a>
+          <a
+            href="#menu"
+            class="icon icon--menu"
+          ></a>
         </div>
-        <div class="header_bottom">
-          <h1 class="header_text">
-            Bring joy back
-            <br>
-            to the everyday
-          </h1>
-        </div>
-     </header>
+      </div>
+      <div class="header__bottom">
+        <h1 class="header__text">
+          Bring joy back
+          <br />
+          to the everyday
+        </h1>
+      </div>
+    </header>
 
-     <main>
-        <section class="recommended">
-          <h2>Recommended</h2>
-        </section>
+    <aside
+      class="page__menu menu"
+      id="menu"
+    >
+      <div class="top-bar menu__top">
+        <a
+          href="#"
+          class="top-bar__logo"
+        >
+          <img
+            src="./src/images/icon/icon_nothing.png"
+            alt="Nothing logo"
+          />
+        </a>
+        <a
+          href="#"
+          class="icon icon--close"
+        ></a>
+      </div>
+      <div class="menu__content">
+        <nav class="nav menu__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#products"
+              >
+                Products
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#store"
+              >
+                Store
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#login"
+              >
+                Login
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#cart"
+              >
+                Cart(0)
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-        <section class="categories">
-          <h2>Browse Nothing products by category</h2>
-        </section>
+        <a
+          href="tel:+123455555555"
+          class="menu__phone-number"
+        >
+          +1 234 5555-55-55
+        </a>
 
-        <section class="about">
-          <h2>About us</h2>
-        </section>
+        <a
+          href="tel:+123455555555"
+          class="menu__call-to-order"
+        >
+          Call to Order
+        </a>
+      </div>
+    </aside>
 
-        <section class="contact">
-          <h2>Contact us</h2>
-        </section>
+    <main>
+      <section
+        class="recommended"
+        id="products"
+      >
+        <h2>Recommended</h2>
+      </section>
 
-     </main>
-     <footer>
-      
-     </footer>
+      <section
+        class="categories"
+        id="store"
+      >
+        <h2>Browse Nothing products by category</h2>
+      </section>
+
+      <section class="about">
+        <h2>About us</h2>
+      </section>
+
+      <section
+        class="contact"
+        id="login"
+      >
+        <h2>Contact us</h2>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
   </body>
 </html>
