@@ -1,6 +1,7 @@
-@import url(./blocks/page.css);
-@import url(./blocks/header.css);
-@import url(./blocks/top_bar.css);
-@import url(./blocks/icon.css);
-@import url(./blocks/menu.css);
-@import url(./blocks/nav.css);
+@use 'utils/mixins';
+@use 'blocks/page';
+@use 'blocks/header';
+@use 'blocks/top_bar';
+@use 'blocks/icon';
+@use 'blocks/menu';
+@use 'blocks/nav';
